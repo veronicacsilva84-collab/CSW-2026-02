@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Contato e orçamento | Verônica Cristina da Silva</title>
+<link href="../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header>
+<nav aria-label="Menu principal" class="menu">
+<a class="logo" href="../index.html">Verônica Cristina  <span>da Silva</span></a> <ul>
+<li><a href="../index.html">Início</a></li>
+<li><a href="../paginas/curriculo.html">Currículo</a></li>
+<li><a href="../paginas/github.html">GitHub</a></li>
+<li><a href="../paginas/servicos.html">Serviços</a></li>
+<li>
+<a aria-current="page" href="../paginas/contato.html">Contato</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class="conteudo-extra" id="conteudo">
+<p class="destaque">PORTFÓLIO • DESENVOLVIMENTO WEB</p>
+<h1>Contato e conexões</h1>
+<p>Entre em contato para conversar sobre gestão documental, soluções da GDI ou meus projetos acadêmicos e de tecnologia.</p>
+<div class="contatos-grid"><a class="contato-card" href="https://www.linkedin.com/in/ver%C3%B4nica-cristina-da-silva-98526526/" rel="noopener noreferrer" target="_blank"><strong>LinkedIn</strong><span>Verônica Cristina da Silva</span></a><a class="contato-card" href="https://wa.me/5527996451860" rel="noopener noreferrer" target="_blank"><strong>WhatsApp</strong><span>(27) 99645-1860</span></a><a class="contato-card" href="mailto:veronica.silva@gdidoc.com.br"><strong>E-mail profissional</strong><span>veronica.silva@gdidoc.com.br</span></a><a class="contato-card" href="https://www.gdidoc.com.br" rel="noopener noreferrer" target="_blank"><strong>Site da GDI</strong><span>www.gdidoc.com.br</span></a><a class="contato-card" href="https://www.instagram.com/veronica.csilva24/" rel="noopener noreferrer" target="_blank"><strong>Instagram</strong><span>@veronica.csilva24</span></a><a class="contato-card" href="mailto:veronica.csilva84@gmail.com"><strong>E-mail pessoal</strong><span>veronica.csilva84@gmail.com</span></a></div><h2 class="form-titulo">Demonstração de formulário de orçamento</h2><form aria-describedby="aviso-envio" class="form-contato" id="pedido">
+<p class="nota" id="aviso-envio">Campos com * são obrigatórios. Ao clicar em Validar solicitação, os dados serão apenas validados nesta página, sem envio. Para falar comigo, utilize os contatos acima.</p>
+<div class="campo">
+<label for="nome">Nome completo *</label><input aria-required="true" autocomplete="name" id="nome" minlength="3" name="nome" required="" type="text"/>
+</div>
+<div class="campo">
+<label for="telefone">Telefone *</label><input aria-required="true" autocomplete="tel" id="telefone" name="telefone" placeholder="(27) 99999-9999" required="" type="tel"/>
+</div>
+<div class="campo">
+<label for="email">E-mail *</label><input aria-required="true" autocomplete="email" id="email" name="email" required="" type="email"/>
+</div>
+<fieldset>
+<legend>Tipo de cliente *</legend>
+<div class="opcoes">
+<label><input aria-required="true" name="pessoa" required="" type="radio" value="Pessoa física"/>
+              Pessoa física</label><label><input name="pessoa" type="radio" value="Pessoa jurídica"/>
+              Pessoa jurídica</label>
+</div>
+</fieldset>
+<div class="campo">
+<label for="horario">Melhor horário para contato</label><select id="horario" name="horario">
+<option value="">Selecione</option>
+<option>Manhã</option>
+<option>Tarde</option>
+<option>Noite</option>
+</select>
+</div>
+<div class="campo">
+<label for="servico">Tipo de serviço *</label><select aria-required="true" id="servico" name="servico" required="">
+<option value="">Selecione</option>
+<option>Site estático</option>
+<option>Site dinâmico</option>
+<option>Site avançado</option>
+<option>Landing page</option>
+<option>Outro</option>
+</select>
+</div>
+<fieldset>
+<legend>Funcionalidades desejadas</legend>
+<div class="opcoes">
+<label><input name="recursos" type="checkbox" value="Formulário"/>
+              Formulário</label><label><input name="recursos" type="checkbox" value="Galeria"/>
+              Galeria</label><label><input name="recursos" type="checkbox" value="Catálogo"/>
+              Catálogo</label><label><input name="recursos" type="checkbox" value="Área administrativa"/>
+              Área administrativa</label>
+</div>
+</fieldset>
+<div class="campo">
+<label for="prazo">Data desejada para conclusão</label><input id="prazo" name="prazo" type="date"/>
+</div>
+<div class="campo">
+<label for="descricao">Descreva o que deseja contratar *</label><textarea aria-required="true" id="descricao" minlength="10" name="descricao" placeholder="Ex.: Preciso de um site para minha cafeteria..." required="" rows="6"></textarea>
+</div>
+<label class="opcoes"><input aria-required="true" id="consentimento" required="" type="checkbox"/>
+          Concordo com o uso dos dados para retorno sobre minha solicitação.
+          *</label><button class="botao-extra" type="submit">Validar solicitação</button>
+<p aria-live="polite" class="mensagem-formulario" id="retorno" role="status" tabindex="-1"></p>
+</form>
+<p class="nota">
+        Demonstração acadêmica: o formulário não possui servidor ou banco de
+        dados e não envia dados automaticamente.
+      </p>
+<script defer="" src="../js/contato.js"></script>
+</main>
+<footer>
+<h2>Verônica Cristina da Silva</h2>
+<p>Minha história • Minha carreira • Meus projetos</p>
+<p>© 2026 · Construção de Software para Web</p>
+</footer>
+</body>
+</html>
