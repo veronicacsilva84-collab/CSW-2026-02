@@ -1,1 +1,0 @@
-document.querySelector('#pedido').addEventListener('submit', function(event){event.preventDefault();if(!this.reportValidity())return;document.querySelector('#retorno').textContent='Formulário validado! Esta é uma demonstração acadêmica; nenhum dado foi enviado. Para receber solicitações reais, será necessário integrar um serviço de envio ou backend.';});
